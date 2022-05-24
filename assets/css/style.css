@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+}
+
+/* heaer styling */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: navy;
+  color: #fff;
+  height: 40px;
+}
+
+.link:hover {
+  color: #bfbfbf;
+}
+
+/* body styling */
+
+.main {
+  text-align: center;
+  margin: auto;
+  border: 5px solid orange;
+  height: 275px;
+  width: 800px;
+  border-radius: 20px;
+  background-color: beige;
+  margin-top: 100px;
+}
+
+.start-button {
+  border-radius: 5px;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.choice-button {
+  border-radius: 5px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.start-button:hover {
+  background-color: white;
+}
+
+button {
+  margin: 5px;
+}

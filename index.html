@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="link" href="#">View Highscores</h1>
+        <h1>Time: <span id="timer-count"></span></h1>
+    </header>
+    <main class="main" id="intro">
+        <h1>Coding Quiz Challenge</h1>
+        <p id="choices">Try to answer the following code related questions with the 60 second<br>
+        time limit.  Keep in mind that incorrect answers will penalize your score/time <br>
+        by 10 seconds!</p>
+        <h2><button class="start-button" type="button" >Start Quiz</button></h2>
+    </main>
+    <main class="main" id="start">
+        <h1 id="question"></h1>
+        <button type="button" class="choice-button" id="choiceA" onclick="checkAnswer(questions[questionCount].multiChoice[0])"></button><br>
+        <button type="button" class="choice-button" id="choiceB" onclick="checkAnswer(questions[questionCount].multiChoice[1])"></button><br>
+        <button type="button" class="choice-button" id="choiceC" onclick="checkAnswer(questions[questionCount].multiChoice[2])"></button><br>
+        <button type="button" class="choice-button" id="choiceD" onclick="checkAnswer(questions[questionCount].multiChoice[3])"></button>
+    </main>
+    <main class="main" id="input-scores">
+        <h1>Congratulations!</h1>
+        <p id="score-display"></p>
+        <form>
+            <input type="text" placeholder="Enter initials here" name="initials" id="input-initials" />
+            <button id="submit-btn" onclick="highScores()" type="button">Submit</button>
+        </form>
+    </main>
+    <main class="main" id="high-scores">
+        <h1>High Scores!</h1>
+        <p></p>
+        <ol>
+            <li id="your-score"></li>
+        </ol>
+        <button id="restart" onclick="tryAgain()" type="button">Try again</button>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+<footer></footer>
